@@ -79,6 +79,11 @@ print(f"{len(list(dfs.keys()))} Dataframes collected")
 
 """## **Sentiment & Emotion Analysis**"""
 
+"""
+- ***j-hartmann/emotion-english-distilroberta-base*** - A model fine-tuned for emotion recognition in English text.
+- ***bhadresh-savani/bert-base-go-emotion*** - Another popular model trained on the GoEmotions dataset from Google, which includes 27 emotion labels.
+"""
+
 model_name = 'finiteautomata/bertweet-base-sentiment-analysis'
 sentiment_analyzer = pipeline("text-classification", model=model_name)
 
