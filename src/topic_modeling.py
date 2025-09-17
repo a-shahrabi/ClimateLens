@@ -1,10 +1,5 @@
 import os
 import pandas as pd
-import azure.ai.ml
-from azure.ai.ml import MLClient
-from azure.identity import DefaultAzureCredential
-
-ml_client = MLClient.from_config(credential=DefaultAzureCredential())
 
 datasets = {}
 
