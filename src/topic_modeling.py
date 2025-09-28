@@ -11,8 +11,8 @@ def load_datasets(data_path, prefix, datasets):
             datasets[file_name] = file_path
 
 datasets = {}
-load_datasets("../parasjamil/filtered_reddit_output/", "filtered_", datasets)
-load_datasets("../parasjamil/cleaned_twitter_data/", "clean_", datasets)
+load_datasets("...", "filtered_", datasets)
+load_datasets("...", "clean_", datasets)
 
 print("Collected Datasets:")
 for key, value in datasets.items():
@@ -55,10 +55,10 @@ import copy # copy topic models
 import time
 
 paths = {
-    "home": "../Users/", # root path, where this file is
-    "models": "../karimel-sharkawy/models/", #path for models
-    "insights": "../karimel-sharkawy/visualizations/sentiment insights/", # static
-    "interactives": "../karimel-sharkawy/visualizations/interactives/",
+    "home": "...", # root path, where this file is
+    "models": "...", #path for models
+    "insights": "...", # static
+    "interactives": "...",
 }
 
 os.makedirs(paths.get("models"), exist_ok=True)
@@ -68,16 +68,9 @@ os.makedirs(paths.get("interactives"), exist_ok=True)
 import warnings
 warnings.filterwarnings("ignore")
 
-import os
-import pandas as pd
-import azure.ai.ml
-from azure.ai.ml import MLClient
-from azure.identity import DefaultAzureCredential
-
 ### modeling
 from bertopic import BERTopic
 from bertopic.representation import MaximalMarginalRelevance
-import cohere
 from bertopic.representation import Cohere
 from sklearn.feature_extraction.text import CountVectorizer, ENGLISH_STOP_WORDS
 from sentence_transformers import SentenceTransformer

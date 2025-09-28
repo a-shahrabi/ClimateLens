@@ -1,6 +1,4 @@
-### Machine Learning & NLP
-
-# General-purpose machine learning algorithms
+### ML & NLP
 scikit-learn==1.5.1  # stopwords
 torch==2.3.1         # needed for bertopic
 sentence-transformers==3.0.1 # Models for embedding sentences into vectors

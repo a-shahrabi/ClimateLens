@@ -17,8 +17,8 @@ def load_datasets(data_path, prefix, datasets):
             datasets[file_name] = file_path
 
 datasets = {}
-load_datasets("../parasjamil/filtered_reddit_output/", "filtered_", datasets)
-load_datasets("../parasjamil/cleaned_twitter_data/", "clean_", datasets)
+load_datasets("...", "filtered_", datasets)
+load_datasets("...", "clean_", datasets)
 
 print("Collected Datasets:")
 for key, value in datasets.items():

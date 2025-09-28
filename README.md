@@ -2,25 +2,26 @@
 
 ClimateLens is an open-source research project dedicated to understanding and addressing climate anxiety among young people. Our goal is to identify how climate anxiety manifests in youth and to develop a reproducible, reusable, and interpretable detection model for early intervention. By analyzing language patterns and expressions linked to climate anxiety, the project uncovers common themes and concerns, offering insights into how youth experience and cope with this growing issue.
 
-## Problem Statement
-
-Climate change is not only a global environmental challenge but also a significant source of anxiety. Despite its increasing prevalence, there is limited understanding of how climate anxiety manifests and few tools exist for early detection and intervention. Without timely support, these anxieties can escalate, worsening mental health outcomes and reducing overall well-being.
-
-We hypothesize that:
-
-+ By uncovering common themes, concerns, and expressions related to climate anxiety,
-+ And by developing a robust NLP-based or LLM-based model to accurately identify instances of climate anxiety,
-
-We can provide recommendations for effective interventions and support mechanisms. Ultimately, this will improve mental health outcomes and well-being for youth affected by climate anxiety.
-
-The successful execution of this project will:
-+ Provide invaluable insights into how climate anxiety manifests.
-+ Enable the development of a practical detection and intervention tool.
-+ Ensure scalability and accessibility by leveraging open-source datasets.
-+ Offer an interactive tool for model implementation and insight visualization.
-
 - [🌐 Launch Webapp](https://huggingface.co/spaces/crc-sprout/ClimateLens)  
 - [📖 Learn More](https://crc.place/climatelens/)
+
+## Problem Statement
+
+Climate change is a significant source of anxiety. Despite its increasing prevalence, there is limited understanding of how climate anxiety manifests and few tools exist for early detection and intervention. Without timely support, these anxieties can escalate, worsening mental health outcomes and reducing overall well-being.
+
+We hypothesize that by analyzing language for recurring themes and expressions, and developing an NLP/LLM-based model to detect climate anxiety, we can deliver actionable insights that guide timely interventions.
+
+This project will:
++ Reveal how climate anxiety manifests in youth language.
++ Develop a practical, reusable detection tool.
++ Ensure scalability and openness through public datasets.
++ Provide an interactive platform for applying and visualizing results.
+
+## Impact
+By enabling early detection, ClimateLens empowers support networks and mental health professionals to act proactively. Our ultimate goals are to:
++ Strengthen youth resilience.
++ Foster a sense of agency.
++ Transform climate-related fears into constructive engagement.
 
 ## ✨ Features
 - **Data Collection** – tools for gathering and cleaning social media datasets.  
@@ -49,18 +50,6 @@ COHERE_API_KEY=your_cohere_key
 ├── requirements.txt
 └── README.md
 ```
-
-## 📖 Documentation
-+ Data Schema
-+ Starter Guide
-
-## Impact
-By enabling early identification of climate anxiety, this project empowers support networks and mental health professionals to respond proactively. It will also contribute valuable research on climate-related perspectives, helping shape better interventions and policies.
-
-Our ultimate goals are to:
-+ Build resilience in young people.
-+ Provide a sense of agency.
-+ Help transform climate-related fears into constructive engagement.
 
 ## 🌐 WebApp
 The production app is deployed on HuggingFace Spaces using Streamlit. All visualizations and explanations are present in the app.

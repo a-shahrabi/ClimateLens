@@ -18,8 +18,8 @@ search_terms = [
 ]
 
 # === CONFIGURATION ===
-input_file = Path("../parasjamil/reddit_data/Anticonsumption_comments.jsonl")  # Change to another file when done
-output_file = Path("../parasjamil/filtered_anticonsumption_comments.csv")
+input_file = Path("...")  # Change to another file when done
+output_file = Path("...")
 
 def contains_keywords(text, keywords):
     """Checks if any keyword appears in the given text."""
@@ -56,15 +56,15 @@ with open(output_file, "w", newline='', encoding="utf-8") as csv_out:
             except json.JSONDecodeError:
                 continue  # skip malformed lines
 
-df = pd.read_csv("../parasjamil/filtered_anticonsumption_comments.csv")
+df = pd.read_csv("...")
 
 total_rows = len(df)
 print("Total rows:", total_rows)
 
 df.head()
 
-input_folder = Path("../parasjamil/reddit_data")
-output_folder = Path("../parasjamil/filtered_reddit_output")
+input_folder = Path("...")
+output_folder = Path("...")
 output_folder.mkdir(exist_ok=True)
 
 # Iterating over all .jsonl files in input folder
